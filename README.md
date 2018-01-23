@@ -1,7 +1,7 @@
 #web-speeding
-要るもの
+##要るもの
 node.js
 grunt
 
-立ち上げ方
+##サーバーの立ち上げ方
 grunt serve

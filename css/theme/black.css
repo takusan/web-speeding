@@ -10,6 +10,9 @@ section.has-light-background, section.has-light-background h1, section.has-light
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
+* {
+  text-align: left;
+}
 body {
   background: #222;
   background-color: #222; }

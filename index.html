@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown="./md/web-speeding-up.md" data-separator="^\n---$" data-separator-vertical="^\n>>>$">
+            <script type="text/template"></script>
+        </section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          
+          // Zoom in and out with Alt+click
+          // Alt+クリックで拡大縮小する
+          { src: 'plugin/zoom-js/zoom.js', async: true }
+        ],
+        // Display controls in the bottom right corner
+        // 右下隅にコントロールを表示する
+        controls: true,
+
+        // Display a presentation progress bar
+        // プレゼンテーションのプログレスバーを表示する
+        progress: true,
+
+        // Display the page number of the current slide
+        // 現在のスライドのページ番号を表示する
+        slideNumber: true,
+
+        // Push each slide change to the browser history
+        // スライドの変更をブラウザの履歴に記録する
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        // ナビゲーションのキーボードショートカットを有効にする
+        keyboard: true,
+
+        // Enable the slide overview mode
+        // スライドオーバービューモードを有効にする
+        overview: true,
+
+        // Vertical centering of slides
+        // スライドを上下中央揃えする
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        // タッチ入力できるデバイスでタッチナビゲーションを有効にする
+        touch: true,
+
+        // Loop the presentation
+        // プレゼンテーションをループする
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        // プレゼンテーションの方向を右から左にする
+        rtl: false,
+
+        // Turns fragments on and off globally
+        // プレゼンテーション全体でフラグメントのオン/オフを切り替える
+        fragments: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        // 埋め込みモードでプレゼンテーションが実行されているか指定する
+        // (つまり)画面の一部に含まれている
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        // ?キーが押されたらヘルプを表示するか指定する
+        help: true,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        // 自動的に次のスライドをめくるまでの時間(ミリ秒単位)。0の時は自動めくりを行わない。
+        // スライドのdata-autoslide属性で上書きできる
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        // ユーザの入力で自動めくりを停止する
+        autoSlideStoppable: true,
+
+        // Enable slide navigation via mouse wheel
+        // マウスホイールでスライドをナビゲーション可能にする
+        mouseWheel: true,
+
+        // Hides the address bar on mobile devices
+        // モバイルデバイスでアドレスバーを隠す
+        hideAddressBar: true,
+
+        // Opens links in an iframe preview overlay
+        // リンクを開くとき、iframeのオーバーレイでプレビュー表示する
+        previewLinks: true,
+
+        // Transition style
+        // スライド切り替えのスタイル
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+
+        // Transition speed
+        // スライド切り替えのスピード
+        transitionSpeed: 'default', // default/fast/slow
+
+        // Transition style for full page slide backgrounds
+        // ページ全体のスライド背景を切り替えるスタイル
+        backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+
+        // Number of slides away from the current that are visible
+        // 現在のスライドからこの値までのスライドが“見える”
+        viewDistance: 3,
+
+        // Parallax background image
+        // パララックス背景画像
+        parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+
+        // Parallax background size
+        // パララックス背景のサイズ
+        parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px"
+
+        // Amount to move parallax background (horizontal and vertical) on slide change
+        // Number, e.g. 100
+        // スライドが変わったときに(水平、垂直方向に)パララックス背景を動かす距離
+        // 数値。例)100
+        parallaxBackgroundHorizontal: '',
+        parallaxBackgroundVertical: ''
+      });
+    </script>
+  </body>
+</html>
